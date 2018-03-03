@@ -60,7 +60,6 @@ sub get_emitents_from_json {
     my $raw_str = "";
     open(FH_JSON, "<", $emitent_file) or die "Cannot open $emitent_file: $!";
     while (<FH_JSON>) {
-    #    chomp;
 	$raw_str .= $_;
     }
     close(FH_JSON);
@@ -75,11 +74,8 @@ sub get_emitents_from_json {
     $trader = $json_ok->{root}->{trader}->{name};
     $trader_url = $json_ok->{root}->{trader}->{url};
 
-#    my %tmp_em = $json_ok->{root}->{trader}->{emitents};
     my $tmp = $json_ok->{root}->{trader}->{emitents};
-#    print (ref($tmp) . "\n");
 
-#    while (($k, $v) = each %$json_ok->{root}->{trader}->{emitents}) {
     while (my ($k, $v) = each %$tmp) {
     
     	if (ref($v) eq "HASH") {
