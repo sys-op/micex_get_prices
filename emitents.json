@@ -5,20 +5,6 @@
 "name": "Московская межбанковская валютная биржа",
 "url": "http://www.micex.ru/issrpc/marketdata/stock/shares/daily/full/result.json",
 	"emitents": {
-		"chsb": {
-		"code": "CHSB",
-		"name": "ОАО Читинская энергосбытовая компания обычные акции",
-		"Currency": "RUR",
-		"version": "3",
-		"BoardID": "TQBR"
-		},
-		"chsbp": {
-		"code": "CHSBP",
-		"name": "ОАО Читинская энергосбытовая компания привилегированные акции",
-		"Currency": "RUR",
-		"version": "3",
-		"BoardID": "TQBR"
-		},
 		"gazp": {
 		"code": "GAZP",
 		"name": "ОАО Газпром обычные акции",
